@@ -89,10 +89,12 @@ public class Actualiza extends HttpServlet {
         
         resp.setContentType("text/html;charset=UTF-8");
         try(PrintWriter out = resp.getWriter()){
+            out.print("<link rel=\"stylesheet\"  href=\"css/bootstrap.min.css\">>"); 
+            out.print("<link rel=\"stylesheet\"  href=\"css/estilos.css\">");
             out.print("<center>");
             out.print("Inscripcion actualizada N°: " +id_inscripcion );
             out.print("</br>");
-            out.print("<td><a href=\"index.jsp\" >Ir al menú</a> </td>");
+             out.print("<button class=\"btn btn-secondary\" onclick=\"location.href='index.jsp'\">Inicio</button>");
             out.print("</center>");
             req.setAttribute("buscarID", f);
              InscripcionDTO dto = new InscripcionDTO();

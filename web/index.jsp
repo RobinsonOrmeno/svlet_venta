@@ -9,22 +9,32 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link rel="stylesheet"  href="css/bootstrap.min.css">
+         <link rel="stylesheet"  href="css/estilos.css">
+        <title>Inscripcion A Cursos</title>
     </head>
     <body>
         
     <center>
-        <h1>INICIO</h1>
+        
+			<h1>INICIO</h1>
+
+	
         
         <br>
+        
         <table>
 		<tr>
-			<td><a href="Actualiza" >Actualizar</a> </td>
-                        <td><a href="Listado" >Consultar</a> </td>
-                          <td><a href="eliminar.jsp" >Eliminar</a> </td>
-                          <td><a href="preInscripcion" >Inscribir</a> </td>
+                        <td><button class="btn btn-secondary" onclick="location.href='preInscripcion'">Inscribir</button> </td>
+			<td><button class="btn btn-secondary" onclick="location.href='Actualiza'">Actualizar</button> </td>
+                        <td><button class="btn btn-secondary" onclick="location.href='Listado'">Consultar</button> </td>
+                        <td><button class="btn btn-secondary" onclick="location.href='Eliminar'">Eliminar</button> </td>
+                        
+                       
 		</tr>
 	</table>
         </center>
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
     </body>
 </html>

@@ -44,5 +44,13 @@ public class Facade {
          dao.modificar(dto);
         
     }
+    public boolean eliminar(int dto){
+        InscripcionDAO dao = new InscripcionDAO();
+      //   dao.eliminar(dto);
+         return dao.eliminar(dto);
+        
+    }
+
+    
     
 }

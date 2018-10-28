@@ -9,6 +9,8 @@
     <head>
          <link href="Estilo.css" rel="stylesheet" type="text/css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <link rel="stylesheet"  href="css/bootstrap.min.css">
+          <link rel="stylesheet"  href="css/estilos.css">
         <title>Detalle ID</title>
     </head>
     <body>
@@ -18,12 +20,13 @@
         <h1>RESULTADO DE LA CONSULTA</h1>
           <div>
             <form action="buscarID" method="GET" >
-                ID <input type="text" name="id">
+                ID <input type="text" name="id" required>
                 <input type="submit" value="Buscar">
             </form>
-        </div>
+               <button class="btn btn-secondary" onclick="location.href='index.jsp'">Inicio</button> </td
+      
         <br>
-         <table id="tabla"  align="center" width="289" border="1" class="datos_form">
+         <table class ="table table-striped" id="tabla"  align="center" width="289" border="1" class="datos_form">
             <tr>
                 <th>ID</th>
                 <th>NOMBRE</th>
@@ -41,10 +44,13 @@
                 
                 
             </tr>
+         </table>
               </center>
-
+  </div>
         <br>
-        <a href="index.jsp" >Ir al menú</a>
+      
+         <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
     </body>
     
     

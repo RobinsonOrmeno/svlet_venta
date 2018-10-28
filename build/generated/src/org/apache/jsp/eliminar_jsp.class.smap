@@ -1,0 +1,17 @@
+SMAP
+eliminar_jsp.java
+JSP
+*S JSP
+*F
++ 0 eliminar.jsp
+eliminar.jsp
+*L
+1,13:51
+13,43:64
+56:107,3
+57:110
+58,5:111,3
+63:126
+64:127,3
+65,6:130
+*E

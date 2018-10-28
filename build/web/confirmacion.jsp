@@ -4,6 +4,11 @@
 %>
 
 <html> 
+    <head>
+          <link rel="stylesheet"  href="css/bootstrap.min.css">
+          <link rel="stylesheet"  href="css/estilos.css">
+        
+    </head>
     <body>
     <center>
         <h1>Felicitaciones</h1>
@@ -11,10 +16,12 @@
         
         <table>
 		<tr>
-			<td><a href="preInscripcion" >Ir al menú</a> </td>
+			<td><button class="btn btn-secondary" onclick="location.href='index.jsp'">Inicio</button> </td>
 		</tr>
 	</table>
         </center>
+         <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
     </body>
 </html>
 

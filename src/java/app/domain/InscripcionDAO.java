@@ -66,7 +66,7 @@ public class InscripcionDAO {
             List<InscripcionDTO> ls = new ArrayList<>();
             while (rs.next()) {
                 InscripcionDTO dto = new InscripcionDTO();
-                dto.setIdCurso(rs.getInt(1));
+                dto.setIdInsc(rs.getInt(1));
                 dto.setNombre(rs.getString(2));
                 dto.setTelefono(rs.getString(3));
                 dto.setIdCurso(rs.getInt(4));
@@ -133,15 +133,27 @@ public class InscripcionDAO {
 
         }
     }
-     public static void main (String[]args){
-            InscripcionDAO insDAO = new InscripcionDAO();
-            InscripcionDTO inscDTO = new  InscripcionDTO();
-            inscDTO.setIdCurso(1);
-            inscDTO.setIdFormaPago(1);
-            inscDTO.setIdInsc(0);
-            
-            insDAO.modificar(inscDTO);
-         
+     
+     
+     public boolean eliminar(int dto){
+          PreparedStatement ps = null;
+        
+
+        String sql = "DELETE FROM inscripcion WHERE id_inscripcion=? ";
+        System.out.println();
+        try {
+            Connection con = UConnection.getConnection();
+            ps = con.prepareStatement(sql);
+          
+            ps.setInt(1, dto);
+            ps.execute();
+            return true;
+        } catch (SQLException e) {
+            System.err.println(e);
+            return false;
+        } 
+     
      }
+  
      
 }
